@@ -2,22 +2,25 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args) {
-        System.out.println("Enter the value of n to find the factorial: ");
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the value of n to find the factorial: ");
         int n = scan.nextInt();
         scan.close();
-        System.out.println("The factorial of " + n + " is " + getFactorial(n));
+
+        int result = getFactorial(n);
+        if (result == -1) {
+            System.out.println("Factorial is not defined for negative numbers.");
+        } else {
+            System.out.println("The factorial of " + n + " is " + result);
+        }
     }
 
     public static int getFactorial(int n) {
         if (n < 0)
             return -1;
-        else if (n == 0 || n == 1)
-            return 1;
         int output = 1;
-        while (n > 1) {
-            output *= n;
-            n--;
+        for (int i = 2; i <= n; i++) {
+            output *= i;
         }
         return output;
     }
