@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
+/**
+ * A utility class to compute the factorial of a given non-negative integer.
+ */
 public class Factorial {
+    /**
+     * The main method to run the factorial program.
+     * Prompts the user for input and displays the factorial result.
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the value of n to find the factorial: ");
@@ -15,6 +24,12 @@ public class Factorial {
         }
     }
 
+    /**
+     * Computes the factorial of a non-negative integer.
+     *
+     * @param n the integer for which to compute the factorial
+     * @return the factorial of n, or -1 if n is negative
+     */
     public static int getFactorial(int n) {
         if (n < 0)
             return -1;
