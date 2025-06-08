@@ -21,6 +21,7 @@ public class OddOrEven {
             System.out.println("It is an even number!");
     }
 
+
     /**
      * Determines if the given integer is odd.
      *
