@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 /**
  * A utility class to check whether a given integer is odd or even.
  */
