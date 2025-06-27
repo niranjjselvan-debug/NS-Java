@@ -18,6 +18,7 @@ public class RegularExpression {
         }
     }
 
+
     private static void randomRegularExpression() {
         String regex = "^[a-zA-Z0-9]+$"; // Matches alphanumeric strings
         String testString = "#$";
