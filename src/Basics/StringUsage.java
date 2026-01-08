@@ -14,8 +14,6 @@ public class StringUsage {
         System.out.println("Does fullname contains njjS ?  : " + fullName.contains("njjS"));
         System.out.println("FirstName ends with jj? : " + firstName.endsWith("jj"));
         System.out.println("is first name and last name are equal? " + firstName.equalsIgnoreCase(lastName));
-
-
     }
 }
 
