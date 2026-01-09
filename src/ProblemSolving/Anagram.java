@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Anagram {
     static void main(String[] args) {
-        List<String> words = Arrays.asList("tea", "tan", "eat", "ate", "nat", "bat");
+        List<String> words = List.of("tea", "tan", "eat", "ate", "nat", "bat");
         Map<String, List<String>> map = new HashMap<>();
 
         for (String word : words) {
